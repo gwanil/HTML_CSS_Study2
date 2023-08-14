@@ -1,45 +1,23 @@
-.btn-blue, .btn-red, .btn-green {
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+body {
+  margin: 0;
 }
 
-.div-green {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
+div {
+  box-sizing: border-box;
 }
 
-.div-green {
-  color: green;
+h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: brown;
 }
 
-.div-green {
-  color: red;
+h3 {
+  font-size: 30px;
+  letter-spacing: -1px;
 }
 
-.div-green {
-  color: blue;
-}
-
-.btn-green {
-  color: green;
-}
-
-.btn-red {
-  color: red;
-}
-
-.btn-blue {
-  color: blue;
-}
-
-.background {
-  background-color: #2a4cb2;
-  font-size: 14px;
-}
-
-.box {
-  color: #2a4cb2;
-  font-size: 8px;
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
 }/*# sourceMappingURL=test.css.map */

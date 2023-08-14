@@ -1,67 +1,101 @@
-%btn {
-  width: 100px;
-  height: 100px;
-  padding: 20px;
-}
-%div {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-}
-
-.div-green {
-  @extend %div;
-  color: green;
-}
-.div-green {
-  @extend %div;
-  color: red;
-}
-.div-green {
-  @extend %div;
-  color: blue;
-}
-
-.btn-green {
-  @extend %btn;
-  color: green;
-}
-.btn-red {
-  @extend %btn;
-  color: red;
-}
-
-.btn-blue {
-  @extend %btn;
-  color: blue;
-}
-
-// .main-bg h4 {
-//   font-size: 16px;
+// %btn {
+//   width: 100px;
+//   height: 100px;
+//   padding: 20px;
 // }
-// .main-bg button {
+// %div {
+//   width: 200px;
+//   height: 200px;
+//   padding: 20px;
+// }
+
+// .div-green {
+//   @extend %div;
+//   color: green;
+// }
+// .div-green {
+//   @extend %div;
+//   color: red;
+// }
+// .div-green {
+//   @extend %div;
+//   color: blue;
+// }
+
+// .btn-green {
+//   @extend %btn;
+//   color: green;
+// }
+// .btn-red {
+//   @extend %btn;
 //   color: red;
 // }
 
-// .main-bg {
-//   h4 {
-//     font-size: 16px;
-//   }
-//   button {
-//     color: red;
-//   }
+// .btn-blue {
+//   @extend %btn;
+//   color: blue;
 // }
 
-$main-color: #2a4cb2;
-$sub-color: #eeeeee;
-$기본사이즈: 16px;
+// // .main-bg h4 {
+// //   font-size: 16px;
+// // }
+// // .main-bg button {
+// //   color: red;
+// // }
 
-.background {
-  background-color: $main-color;
-  font-size: ($기본사이즈 - 2px);
+// // .main-bg {
+// //   h4 {
+// //     font-size: 16px;
+// //   }
+// //   button {
+// //     color: red;
+// //   }
+// // }
+
+// $main-color: #2a4cb2;
+// $sub-color: #eeeeee;
+// $기본사이즈: 16px;
+
+// .background {
+//   background-color: $main-color;
+//   font-size: ($기본사이즈 - 2px);
+// }
+
+// .box {
+//   color: $main-color;
+//   font-size: ($기본사이즈 / 2);
+// }
+
+// @mixin 폰트스타일($구멍, $구멍2) {
+//   font-size: $구멍;
+//   #{$구멍2}: -1px;
+// }
+
+// h2 {
+//   @include 폰트스타일(50px, width);
+// }
+// h3 {
+//   // @include 폰트스타일(30px);
+// }
+// h4 {
+//   font-size: 10px;
+//   letter-spacing: -1px;
+// }
+@use 'reset';
+
+@mixin 폰트스타일($구멍) {
+  font-size: $구멍;
+  letter-spacing: -1px;
 }
 
-.box {
-  color: $main-color;
-  font-size: ($기본사이즈 / 2);
+h2 {
+  @include 폰트스타일(40px);
+  color: reset.$메인칼라;
+}
+h3 {
+  @include 폰트스타일(30px);
+}
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
 }
