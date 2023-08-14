@@ -1,0 +1,67 @@
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+%div {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.div-green {
+  @extend %div;
+  color: green;
+}
+.div-green {
+  @extend %div;
+  color: red;
+}
+.div-green {
+  @extend %div;
+  color: blue;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+.btn-red {
+  @extend %btn;
+  color: red;
+}
+
+.btn-blue {
+  @extend %btn;
+  color: blue;
+}
+
+// .main-bg h4 {
+//   font-size: 16px;
+// }
+// .main-bg button {
+//   color: red;
+// }
+
+// .main-bg {
+//   h4 {
+//     font-size: 16px;
+//   }
+//   button {
+//     color: red;
+//   }
+// }
+
+$main-color: #2a4cb2;
+$sub-color: #eeeeee;
+$기본사이즈: 16px;
+
+.background {
+  background-color: $main-color;
+  font-size: ($기본사이즈 - 2px);
+}
+
+.box {
+  color: $main-color;
+  font-size: ($기본사이즈 / 2);
+}
