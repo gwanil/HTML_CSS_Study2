@@ -81,21 +81,38 @@
 //   font-size: 10px;
 //   letter-spacing: -1px;
 // }
-@use 'reset';
+// @use 'reset';
 
-@mixin 폰트스타일($구멍) {
-  font-size: $구멍;
-  letter-spacing: -1px;
+// @mixin 폰트스타일($구멍) {
+//   font-size: $구멍;
+//   letter-spacing: -1px;
+// }
+
+// h2 {
+//   @include 폰트스타일(40px);
+//   color: reset.$메인칼라;
+// }
+// h3 {
+//   @include 폰트스타일(30px);
+// }
+// h4 {
+//   font-size: 10px;
+//   letter-spacing: -1px;
+// }
+
+.list {
+  background-color: wheat;
+  width: 100%;
+  height: 500px;
+  align-items: center;
 }
 
-h2 {
-  @include 폰트스타일(40px);
-  color: reset.$메인칼라;
+.list-container {
+  background-color: white;
+  width: 70%;
+  height: 300px;
 }
-h3 {
-  @include 폰트스타일(30px);
-}
-h4 {
-  font-size: 10px;
-  letter-spacing: -1px;
+
+.no_dot {
+  list-style-type: none;
 }
