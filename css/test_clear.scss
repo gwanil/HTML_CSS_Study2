@@ -1,0 +1,44 @@
+.sh-list {
+  li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+  li:hover {
+    background-color: skyblue;
+    color: white;
+  }
+}
+
+.alert-box-green {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  background-color: green;
+  color: white;
+}
+.alert-box-yellow {
+  @extend .alert-box-green;
+  background-color: orange;
+}
+.alert-box-blue {
+  @extend .alert-box-green;
+  background-color: skyblue;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+@mixin column($구멍) {
+  float: left;
+  width: $구멍;
+  padding: 15px;
+}
+
+.row .col-6 {
+  @include column(50%);
+}
+.row .col-4 {
+  @include column(33.33%);
+}

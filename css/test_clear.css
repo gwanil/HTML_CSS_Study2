@@ -1,0 +1,41 @@
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list li:hover {
+  background-color: skyblue;
+  color: white;
+}
+
+.alert-box-green, .alert-box-blue, .alert-box-yellow {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  background-color: green;
+  color: white;
+}
+
+.alert-box-yellow {
+  background-color: orange;
+}
+
+.alert-box-blue {
+  background-color: skyblue;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.row .col-4 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}/*# sourceMappingURL=test_clear.css.map */
