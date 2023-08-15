@@ -188,6 +188,10 @@
   @extend %container;
 }
 
+%col-box {
+  flex: 0 0 auto;
+}
+
 .row-box {
   background-color: rgb(233, 214, 238);
   margin-top: 10px;
@@ -200,11 +204,16 @@
 }
 
 .col-6-box {
-  flex: 0 0 auto;
+  @extend %col-box;
   width: 50%;
 }
 
 .col-4-box {
-  flex: 0 0 auto;
+  @extend %col-box;
   width: 33.33%;
+}
+
+.col-3-box {
+  @extend %col-box;
+  width: 25%;
 }

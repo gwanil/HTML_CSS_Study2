@@ -1,4 +1,5 @@
-.row-container, .alert-container {
+.row-container,
+.alert-container {
   background-color: white;
   width: 70%;
   height: 300px;
@@ -17,22 +18,27 @@
   height: 300px;
   margin: auto;
 }
+
 .list-container ul {
   padding-right: 32px;
   padding-top: 30px;
 }
+
 .list-container li {
   list-style-type: none;
   border: 1px solid gray;
   padding: 20px;
   font-size: 20px;
 }
+
 .list-container li:active {
   background-color: blue;
   color: white;
 }
 
-.alert-yellow, .alert-blue, .alert-green {
+.alert-yellow,
+.alert-blue,
+.alert-green {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -45,10 +51,12 @@
 .alert-green {
   background-color: rgb(153, 214, 153);
 }
+
 .alert-green p {
   color: rgb(45, 107, 45);
   margin: auto;
 }
+
 .alert-green p::before {
   content: "Well done! ";
   font-weight: bold;
@@ -57,10 +65,12 @@
 .alert-blue {
   background-color: rgb(165, 222, 240);
 }
+
 .alert-blue p {
   color: rgb(49, 108, 175);
   margin: auto;
 }
+
 .alert-blue p::before {
   content: "Heads up! ";
   font-weight: bold;
@@ -69,13 +79,21 @@
 .alert-yellow {
   background-color: rgb(206, 216, 137);
 }
+
 .alert-yellow p {
   color: rgb(98, 94, 19);
   margin: auto;
 }
+
 .alert-yellow p::before {
   content: "Warning! ";
   font-weight: bold;
+}
+
+.col-3-box,
+.col-4-box,
+.col-6-box {
+  flex: 0 0 auto;
 }
 
 .row-box {
@@ -90,11 +108,15 @@
 }
 
 .col-6-box {
-  flex: 0 0 auto;
   width: 50%;
 }
 
 .col-4-box {
-  flex: 0 0 auto;
   width: 33.33%;
-}/*# sourceMappingURL=test.css.map */
+}
+
+.col-3-box {
+  width: 25%;
+}
+
+/*# sourceMappingURL=test.css.map */
